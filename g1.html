@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+		<link rel="stylesheet" href="style.css" />
+
+		<!-- Bootstrap CSS -->
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+			crossorigin="anonymous"
+		/>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script>
+			$(document).ready(function () {
+				$("#img1").click(function () {
+					$("#p1").slideToggle("slow");
+				});
+				$("#img2").click(function () {
+					$("#p2").slideToggle("medium");
+					$("#p4").slideToggle("medium");
+
+				});
+				$("#img3").click(function () {
+					$("#p3").slideToggle("fast");
+				});
+				
+			});
+		</script>
+
+		<style>
+			#img1:hover {
+				border: orchid;
+			}
+		</style>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous">
+    <link rel="stylesheet" href="Home_page/src/Style.css" />
+    <link rel="stylesheet" href="Home_page/src/mobile-style.css">
+    <title>Gallery</title>
+	</head>
+	<body style="background-color: #EFD3FA">
+		<!-- navbar Starts-->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+				<a class="navbar-brand" href="#">Gallery</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Mobiles</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Laptops</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Others</a>
+						</li>
+					</ul>
+					<form class="form-inline my-2 my-lg-0">
+						<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+						<button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+					</form>
+				</div>
+			</nav>
+		<!-- navbar ends -->
+		<br />
+		<br />
+
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+      </ul>
+      <div class="carousel-inner" style="height: 60vh">
+        <div class="carousel-item active">
+          <center>
+            <img
+              src="images/caroimage2.jpg"
+              alt="First slide"
+               width="550" height="500"
+              style="object-fit: contain !important"
+            />
+          </center>
+        </div>
+        <div class="carousel-item">
+          <center>
+            <img
+              src="images/caroimage1.jpg"
+              alt="Second slide"
+               width="500" height="500"
+              style="object-fit: contain !important"
+            />
+          </center>
+        </div>
+        <div class="carousel-item">
+          <center>
+            <img
+              src="images/caroimage3.jpg"
+              alt="Third slide"
+               width="550" height="500"
+              style="object-fit: contain !important"
+            />
+          </center>
+        </div>
+      </div>
+    </div>
+		<h1 style="text-align: center">Image Gallery</h1>
+		<h4 style="text-align: center">Click to See more</h4>
+
+		<br />
+		<br />
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 mb-2">
+					<a href="#" data-lightbox="mygallary"></a
+					><img src="images/iphse.jpg" id="img1"  height="200" width="300" />
+					<div id="p1">
+					<h5 class="card-title">iphone SE</h5>
+										<p class="card-text">New Apple iPhone SE (64GB, Black)</p>
+										<a href="#" class="btn btn-primary">Go somewhere</a>
+										</div>
+				</div>
+				<div class="col-md-4 mb-2">
+					<a href="#" data-lightbox="mygallary"></a
+					><img src="images/oneplus8pro.jpg" id="img2" />
+					<p id="p2" style="display: none">
+						 Ultramarine Blue, 5G Unlocked Android Smartphone
+					</p>
+					<br>
+					<!-- <p >Oneplus 8 Pro</p> -->
+					<h5 id="p4" class="card-title">Oneplus 8</h5>
+					<br>
+
+					<a href="#" class="btn btn-primary">Go somewhere</a>
+				</div>
+				<div class="col-md-4 mb-2">
+					<a href="#" data-lightbox="mygallary"></a
+					><img src="images/s10.jpg" id="img3" />
+					<div id="p3">
+					<h5 class="card-title">Samsung S10</h5>
+										<p class="card-text">New Apple iPhone SE (64GB, Black)</p>
+										<a href="#" class="btn btn-primary">Go somewhere</a>
+										</div>
+				</div>
+			</div>
+
+		 <footer background-color:#89C2F6>
+      <div class="container-fluid p-0">
+        <div class="row text-left">
+          <div class="col-md-5 col-sm-5">
+            <h4 class="text-light">About us</h4>
+            <h5 class="text-light">Mobile & Laptop</h5>
+            <p class="text-light">Digital platform to </p>
+            <p class="text-light">provide specification info about gadgets</p>
+
+            
+              <span> Daily Tuition</span>
+            </p>
+          </div>
+          <div class="col-md-5 col-sm-12">
+            <div>
+            <h4 class="text-light">Quick Links</h4>
+            <a class="nav-link" href="index.html">Home</a>
+            <h6 class="text-light">Gallery</h6>
+
+            
+            
+              
+              <a class="nav-link" href="login.html">Login</a>
+            </div>
+            
+            <a href="signup.html" class="nav-link">Register</a>
+          </div>
+          <div class="col-md-2 col-sm-12">
+            <h4 class="text-light">Follow Us</h4>
+            <p class="text-muted">Let us be social</p>
+            <div class="column text-light">
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-youtube"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+		 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
+    <script src="Home_page/src/main.js"></script>
+	</body>
+</html>
