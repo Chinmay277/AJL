@@ -2,25 +2,18 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags-->
+   
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Colorlib Templates">
     <meta name="author" content="Colorlib">
     <meta name="keywords" content="Colorlib Templates">
 
-    <!-- Title Page-->
+  
     <title>Tech Info Register</title>
 
-    <!-- Icons font CSS-->
-    
-    <!-- Font special for pages-->
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
-    <!-- Vendor CSS-->
-    
-
-    <!-- Main CSS-->
     <link href="css/main.css" rel="stylesheet" media="all">
 </head>
 
@@ -35,13 +28,13 @@
                             <div class="col-2">
                                 <div class="input-group">
                                     <label class="label">first name</label>
-                                    <input class="input--style-4" type="text" name="first_name">
+                                    <input id="fname" class="input--style-4" type="text" name="first_name">
                                 </div>
                             </div>
                             <div class="col-2">
                                 <div class="input-group">
                                     <label class="label">last name</label>
-                                    <input class="input--style-4" type="text" name="last_name">
+                                    <input id="lname" class="input--style-4" type="text" name="last_name">
                                 </div>
                             </div>
                         </div>
@@ -50,8 +43,10 @@
                                 <div class="input-group">
                                     <label class="label">Birthday</label>
                                     <div class="input-group-icon">
-                                        <input class="input--style-4 js-datepicker" type="text" name="birthday">
+                                        <input id="bday" class="input--style-4 js-datepicker" type="text" >
+
                                         <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -75,41 +70,59 @@
                             <div class="col-2">
                                 <div class="input-group">
                                     <label class="label">Email</label>
-                                    <input class="input--style-4" type="email" name="email">
+                                    <input id="email" class="input--style-4" type="email" name="email">
                                 </div>
                             </div>
                             <div class="col-2">
                                 <div class="input-group">
                                     <label class="label">Phone Number</label>
-                                    <input class="input--style-4" type="text" name="phone">
+                                    <input id="phon" class="input--style-4" type="text" name="phone">
                                 </div>
                             </div>
                         </div>
                    
                         <div class="p-t-15">
-                            <button class="btn btn--radius-2 btn--blue" type="submit">Submit</button>
+                            <button id="sub" class="btn btn--radius-2 btn--blue" type="submit">Submit</button>
                         </div>
+                        <div id="panel">Clicked on Submit button</div>
                         <div class="p-t-15">
-                            Already have an account?
+                           <p id="par"> Already have an account? </p>
                             <a href="login.html">Login</a>
                         </div>
+                     
                     </form>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Jquery JS-->
+    
     <script src="vendor/jquery/jquery.min.js"></script>
-    <!-- Vendor JS-->
+    
     <script src="vendor/select2/select2.min.js"></script>
     <script src="vendor/datepicker/moment.min.js"></script>
     <script src="vendor/datepicker/daterangepicker.js"></script>
 
-    <!-- Main JS-->
-    <script src="js/global.js"></script>
+     <script src="https://unpkg.com/popper.js@1"></script>
+    <script src="https://unpkg.com/tippy.js@4"></script>
+    <script src="js/signup.js"></script>
 
+    <style> 
+#sub, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color: #e5eecc;
+  border: solid 1px #c3c3c3;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+</style>
+
+    
+   
 </body>
 
 </html>
-<!-- end document-->
